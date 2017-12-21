@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./v1","loc":{"line":1,"column":17}},{"name":"./v4","loc":{"line":2,"column":17}}],"generated":{"js":"var e=require(\"./v1\"),r=require(\"./v4\"),v=r;v.v1=e,v.v4=r,module.exports=v;"},"hash":"01f3f97f7bca0c7cc080f36091801e29"}
