@@ -1,1 +1,0 @@
-{"dependencies":[],"generated":{"js":"'use strict';\nmodule.exports = self => {\n\tfor (const key of Object.getOwnPropertyNames(self.constructor.prototype)) {\n\t\tconst val = self[key];\n\n\t\tif (key !== 'constructor' && typeof val === 'function') {\n\t\t\tself[key] = val.bind(self);\n\t\t}\n\t}\n\n\treturn self;\n};\n"},"hash":"8abc3d7a7b4bb71418c89a3f64c30378"}

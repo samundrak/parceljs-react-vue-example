@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"vue"},{"name":"./MainApp.vue"}],"generated":{"js":"\"use strict\";function e(e){return e&&e.__esModule?e:{default:e}}var u=require(\"vue\"),r=e(u),t=require(\"./MainApp.vue\"),n=e(t),a=new r.default({data:{},render:function(e){return e(n.default)}});a.$mount(\"#app\");"},"hash":"c1d4edc19a6b916c06e777c274b4157c"}

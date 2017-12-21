@@ -1,1 +1,0 @@
-{"dependencies":[{"name":"./v1","loc":{"line":1,"column":17}},{"name":"./v4","loc":{"line":2,"column":17}}],"generated":{"js":"var v1 = require('./v1');\nvar v4 = require('./v4');\n\nvar uuid = v4;\nuuid.v1 = v1;\nuuid.v4 = v4;\n\nmodule.exports = uuid;\n"},"hash":"47f19b8f3c2307324d9b4d8f0414ba30"}
