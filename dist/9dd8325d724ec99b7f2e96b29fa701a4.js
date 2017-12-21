@@ -65,6 +65,6 @@ require = (function (modules, cache, entry) {
 
     // Override the current require with this new one
     return newRequire;
-})({8:[function(require,module,exports) {
+})({4:[function(require,module,exports) {
 "use strict";
-},{}]},{},[8])
+},{}]},{},[4])
