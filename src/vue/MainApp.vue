@@ -32,70 +32,70 @@
 </template>
 
 <script>
-import ListBox from "./ListBox.vue";
+import ListBox from './ListBox.vue';
 
 export default {
   data() {
     return {
       store: [
         {
-          name: "Car",
-          id: 1
+          name: 'Car',
+          id: 1,
         },
         {
-          name: "Bike",
-          id: 2
+          name: 'Bike',
+          id: 2,
         },
         {
-          name: "Truck",
-          id: 3
+          name: 'Truck',
+          id: 3,
         },
         {
-          name: "Bus",
-          id: 4
+          name: 'Bus',
+          id: 4,
         },
         {
-          name: "Train",
-          id: 5
+          name: 'Train',
+          id: 5,
         },
         {
-          name: "Aeroplane",
-          id: 6
-        }
+          name: 'Aeroplane',
+          id: 6,
+        },
       ],
       selected: [],
       active: {
         item: {},
-        section: null
-      }
+        section: null,
+      },
     };
   },
   methods: {
     handleItemSelect(section) {
-      return item => {
+      return (item) => {
         this.active.section = section;
         this.active.item = item;
       };
     },
     moveItem(section) {
-      if (!this.active.section) return alert("Please select item to move");
+      if (!this.active.section) return alert('Please select item to move');
       const selected = this[section];
       selected.push(this.active.item);
-      const itemToRemoveFrom = section === "store" ? "selected" : "store";
+      const itemToRemoveFrom = section === 'store' ? 'selected' : 'store';
       this[itemToRemoveFrom].splice(
         this[itemToRemoveFrom].findIndex(
-          item => item.id === this.active.item.id
+          (item) => item.id === this.active.item.id,
         ),
-        1
+        1,
       );
       this.active = {
         item: {},
-        section: null
+        section: null,
       };
-    }
+    },
   },
   components: {
-    ListBox
-  }
+    ListBox,
+  },
 };
 </script>
